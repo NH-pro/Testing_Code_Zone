@@ -1,6 +1,6 @@
 let meStatus = 'alive';
 
-function myFunction() {
+function myFate() {
     if (meStatus === 'alive'){
         document.getElementById("test").innerText= "I am destroyed";
         document.getElementById("button").style.backgroundColor="limegreen";
