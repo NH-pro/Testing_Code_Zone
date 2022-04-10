@@ -17,11 +17,16 @@ header {
     border: 10px ridge yellow;
     border-radius: 5px;
 }
-button {
+.bigButton {
     color:black;
     background-color: red;
     border-radius: 10px;
     width: 200px;
     height: 200px;
     font-size: x-large;
+}
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
 }

@@ -9,10 +9,26 @@
         <h1>Welcome Neil</h1>
         <h2>This is where you test stuff. So start doing that.</h2>
     </header>
+
     <main>
-        <button id="button" onclick="myFate()">Big Red Button</button>
         <p id="test">I am alive</p>
+
+        <button class="bigButton" id="button" onclick="myFate()">Big Red Button</button>
+
+        <p id="questions">What is your favorite color?</p>
+
+        <div class="textContainer">
+            <input id="textAnswer" type="text" placeholder="Type stuff">
+            <button onclick="yourAnswers()">Click here</button>
+        </div>
+        
+        <ul>
+            <li id="colorAnswer">favorite color</li>
+            <li id="animalAnswer">favorite animal</li>
+            <li id="foodAnswer">favorite food</li>
+        </ul>
     </main>
+
     <footer>
     </footer>
 </body>
