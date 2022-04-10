@@ -33,6 +33,15 @@ function yourAnswers(){
     else if (favoriteFood === ''){
         favoriteFood = document.getElementById("textAnswer").value;
         document.getElementById("foodAnswer").innerText = favoriteFood;
-        document.getElementById("questions").innerText = 'Those are cool facts. It is nice to meet you!';
+        document.getElementById("questions").innerText = 'Those are cool facts. It is nice to meet you! If you would like to reset your answers, click "Submit Answers" again.';
+    }
+    else if (favoriteColor != '' && favoriteAnimal != '' && favoriteFood != ''){
+        favoriteColor = '';
+        favoriteAnimal = '';
+        favoriteFood = '';
+        document.getElementById("colorAnswer").innerText = 'favorite color';
+        document.getElementById("animalAnswer").innerText = 'favorite animal';
+        document.getElementById("foodAnswer").innerText = 'favorite food';
+        document.getElementById("questions").innerText = 'Tell me about yourself. What is your favorite color?';
     }
 }
