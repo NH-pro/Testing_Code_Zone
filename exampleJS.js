@@ -33,7 +33,6 @@ function yourAnswers(){
     else if (favoriteFood === ''){
         favoriteFood = document.getElementById("textAnswer").value;
         document.getElementById("foodAnswer").innerText = favoriteFood;
-        document.getElementById("questions").innerText = 'Nice to meet you!';
+        document.getElementById("questions").innerText = 'Those are cool facts. It is nice to meet you!';
     }
-
 }
