@@ -3,13 +3,20 @@ let meStatus = 'alive';
 function myFate(){
     if (meStatus === 'alive'){
         document.getElementById("test").innerText = "KABOOM!";
+        document.getElementById("test").style.fontSize = "100px";
         document.getElementById("button").style.backgroundColor= "limegreen";
+        document.body.style.backgroundImage = "url('explosion-boom.gif')";
+        document.body.style.backgroundSize = "50%";
+        document.body.style.backgroundRepeat = "repeat-x";
+        document.body.style.backgroundPosition = "0 125px";
         document.getElementById("button").innerText = "Big Green Button";
         meStatus = 'dead';
     }
     else if (meStatus === 'dead'){
         document.getElementById("test").innerText = "No Kaboom";
+        document.getElementById("test").style.fontSize = "";
         document.getElementById("button").style.backgroundColor = "red";
+        document.body.style.backgroundImage = "";
         document.getElementById("button").innerText ="Big Red Button";
         meStatus = 'alive';
     }
