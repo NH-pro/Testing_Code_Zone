@@ -1,3 +1,4 @@
+// Start of Big Red Button code.
 let meStatus = 'alive';
 
 function myFate(){
@@ -21,7 +22,9 @@ function myFate(){
         meStatus = 'alive';
     }
 }
+// End of Big Red Button code.
 
+// Start of Getting to Know You code.
 let favoriteColor = '';
 let favoriteAnimal = '';
 let favoriteFood = '';
@@ -55,4 +58,11 @@ function yourAnswers(){
         document.getElementById("questions").innerText = 'Tell me about yourself. What is your favorite color?';
         document.getElementById("textAnswer").value = '';
     }
+}
+// End of Getting to Know You code.
+
+// Start of Hobbies Array code.
+function showHobbies(){
+    let myHobbies = ['Tasting new foods', 'Playing disc golf', 'Playing Magic the Gathering with friends', 'Learning how to code'];
+    document.getElementById("hobbies").innerText = myHobbies.join(' and ');
 }
